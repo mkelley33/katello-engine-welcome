@@ -7,6 +7,8 @@ module Welcome
     end
 
     def index
+      # TODO: make layouts parent directory configurable
+      render 'bastion/layouts/application', :layout => false
     end
   end
 end
