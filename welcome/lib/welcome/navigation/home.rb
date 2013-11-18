@@ -14,10 +14,10 @@ module Welcome
     end
     class Home < ::Navigation::Item
       def initialize(organization)
-        @key           = :welcome_home
+        @key           = :home
         @display       = _("Home")
         @authorization = lambda{ organization && organization.readable? }
-        @url           = welcome_home_path
+        @url           = home_path
       end
     end
   end

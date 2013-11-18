@@ -18,7 +18,7 @@
  * @description
  *   Module for home related functionality.
  */
-angular.module('Welcome.homes', [
+angular.module('Welcome.home', [
     'ngResource',
     'alchemy',
     'alch-templates',
@@ -36,17 +36,17 @@ angular.module('Welcome.homes', [
  * @description
  *   Used for systems level configuration such as setting up the ui state machine.
  */
-angular.module('Welcome.homes').config(['$stateProvider', function($stateProvider) {
+angular.module('Welcome.home').config(['$stateProvider', function($stateProvider) {
     $stateProvider.state('home', {
         abstract: true,
-        controller: 'HomesController',
-        templateUrl: 'homes/views/home.html'
+        controller: 'HomeController',
+        templateUrl: 'home/views/home.html'
     })
-    .state('homes.index', {
-        url: '/homes',
+    .state('home.index', {
+        url: '/home',
         views: {
             'table': {
-                templateUrl: 'homes/views/homes-table-full.html'
+                templateUrl: 'home/views/homes-table-full.html'
             }
         }
     })
