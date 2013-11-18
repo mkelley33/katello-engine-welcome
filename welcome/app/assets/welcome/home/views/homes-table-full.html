@@ -1,0 +1,15 @@
+<table alch-table="table" class="table table-striped" ng-class="{'table-mask': table.working}">
+  <thead>
+    <tr alch-table-head row-select>
+      <th alch-table-column="name" sortable>{{ "Name" }}</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr alch-table-row ng-repeat="home in table.rows" row-select="home">
+      <td alch-table-cell>
+          {{ home.name }}
+      </td>
+    </tr>
+  </tbody>
+</table>

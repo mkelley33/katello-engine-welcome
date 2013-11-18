@@ -25,8 +25,6 @@
  *   Defines the columns to display and the transform function for how to generate each row
  *   within the table.
  */
-// TODO: add CurrentOrganization back into the mix, but for demo purposes it is
-// currently left out.
 angular.module('Welcome.home').controller('HomeController',
     ['$scope', '$location', 'Nutupane', 'Home',
     function($scope, $location, Nutupane, Home) {
