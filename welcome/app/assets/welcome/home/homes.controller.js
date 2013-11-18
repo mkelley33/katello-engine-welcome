@@ -25,7 +25,7 @@
  *   Defines the columns to display and the transform function for how to generate each row
  *   within the table.
  */
-angular.module('Welcome.home').controller('HomeController',
+angular.module('Welcome.homes').controller('HomesController',
     ['$scope', '$location', 'Nutupane', 'Home',
     function($scope, $location, Nutupane, Home) {
         var params = {
